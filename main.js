@@ -16,7 +16,7 @@ onload = () => {
     if (confettiActive) {
       clearInterval(confettiInterval);
       confettiActive = false;
-      btn.textContent = '🎊 Confetti';
+      btn.textContent = 'Confetti';
     } else {
       confettiInterval = setInterval(() => {
         confetti({
@@ -30,7 +30,7 @@ onload = () => {
       }, 400);
 
       confettiActive = true;
-      btn.textContent = '⛔ Stop Confetti';
+      btn.textContent = 'Stop Confetti';
     }
   }
 
@@ -40,7 +40,7 @@ onload = () => {
     if (crackersActive) {
       clearInterval(crackersInterval);
       crackersActive = false;
-      btn.textContent = '🎆 Crackers';
+      btn.textContent = 'Crackers';
     } else {
       crackersInterval = setInterval(() => {
         // Firework-style burst from bottom
@@ -55,6 +55,6 @@ onload = () => {
       }, 1000);
 
       crackersActive = true;
-      btn.textContent = '⛔ Stop Crackers';
+      btn.textContent = 'Stop Crackers';
     }
   }
